@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
-		<title>Happy Kitty shooter game</title>
-
-	</head>
-
-	<body>
-    <header>
-    </header>
-        
-        
-<div class="wrapper">
+  <head>
+      <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+      <title>Happy Kitty shooter game</title>
+  </head>
+  <body>
+    <div class="wrapper">
         <h1>happy kitty</h1>
-         <h3>Works best in Chrome or Firefox<br>
+        <h3>Works best in Chrome or Firefox<br>
         MOVE LEFT: LEFT ARROW OR "A" KEY<br>
         MOVE RIGHT: RIGHT ARROW OR "D" KEY<br>
         FIRE: SPACE BAR
         </h3>
         <div class="audioMuter" onclick="mute()">Music is now <span id="musicMuter">On</span></div>
-		<!-- The canvas for the panning background -->
-		<canvas id="background" width="700" height="450">
-			Your browser does not support canvas. Please try again with a different browser.
-		</canvas>
-		<!-- The canvas for all enemy ships and bullets -->
-		<canvas id="main" width="700" height="450">
-		</canvas>
-		<!-- The canvas the ship uses (can only move up
-         one forth the screen. -->
-		<canvas id="ship" width="700" height="450">
-		</canvas>
-		<div class="score">SCORE: <span id="score"></span></div>
-		<div class="game-over" id="game-over">GAME OVER<p><span onclick="game.restart()">PLAY GAME</span></p></div>
-       
+        <!-- The canvas for the panning background -->
+        <canvas id="background" width="700" height="450">
+          Your browser does not support canvas. Please try again with a different browser.
+        </canvas>
+        <!-- The canvas for all enemy ships and bullets -->
+        <canvas id="main" width="700" height="450">
+        </canvas>
+        <!-- The canvas the ship uses (can only move up
+             one forth the screen. -->
+        <canvas id="ship" width="700" height="450">
+        </canvas>
+        <div class="score">SCORE: <span id="score"></span></div>
+        <div class="game-over" id="game-over">GAME OVER<p><span onclick="game.restart()">PLAY GAME</span></p></div>
         <div class="loading" id="loading"><p>Help Happy Kitty defend against the evil Pink Pony<br>PLAY Happy Kitty Now</p></div>
-       
-    <footer>  
-        <p div id="footer">This is a light-hearted parody of competitors in the kitty vs. pony market.  This game was made with the base code of Steven Lambert at http://blog.sklambert.com/. Music file "Keep Clickin" by Permaband, CCP Games, Creative Commons NC 3.0,  https://soundcloud.com/ccpgames/permaband-keep-clickin</p>
-    </footer>
-</div>   
-       
-		<script src="js/app.js"></script>
-	</body>
+        <footer>
+            <p div id="footer">This is a light-hearted parody of competitors in the kitty vs. pony market.  This game was made with the base code of Steven Lambert at http://blog.sklambert.com/. Music file "Keep Clickin" by Permaband, CCP Games, Creative Commons NC 3.0,  https://soundcloud.com/ccpgames/permaband-keep-clickin</p>
+        </footer>
+    </div>
+  </body>
+  <script src="js/app.js"></script>
 </html>
